@@ -1,3 +1,5 @@
+// 注意require('koa-router')返回的是函数:
+const router = require('koa-router')();
 
 router.get('/', async function(ctx, next){
     // console.dir(ctx);
@@ -21,3 +23,5 @@ router.post('/signin', async (ctx, next) => {
         <p><a href="/">Try again</a></p>`;
     }
 });
+
+export default router;
